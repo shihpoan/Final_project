@@ -22,6 +22,12 @@ function renderStudents(doc){
     cross.setAttribute('class','color');
     cross.textContent = 'x';
     tr.appendChild(cross);
+    cross.addEventListener('mouseover', ()=>{
+        cross.textContent = '刪除';
+    });
+    cross.addEventListener('mouseout', ()=>{
+        cross.textContent = 'x';
+    });
     cross.addEventListener('click', (test) => {
         test.stopPropagation();
         let id = test.target.parentElement.getAttribute('data-id');
