@@ -3,7 +3,7 @@ let router = express.Router();
 let Shihpoan = require('./Shipoan.js');
 let Naruto = require('./Naruto.js');
 let Sasuke = require('./Sasuke.js');
-router.use(express.static('./image')); 
+router.use(express.static('./public'));
 router.get('/', (req, res) => {
     let options = {
         root: __dirname,
