@@ -23,6 +23,7 @@ function renderStudents(doc){
         let id = test.target.parentElement.getAttribute('data-id');
         console.log(id);
         db.collection('ClassA').doc(id).delete();
+        alert("您已刪除：",id)
     });
     //
 
