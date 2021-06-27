@@ -19,6 +19,7 @@ function renderStudents(doc){
     
     // delete 
     let cross = document.createElement('div');
+    cross.setAttribute('class','color');
     cross.textContent = 'x';
     tr.appendChild(cross);
     cross.addEventListener('click', (test) => {
