@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <h1>ClassA</h1>
+    <body>
+        <div class="content">
+            <form id="add-students-form">
+                <input type="text" name="name" placeholder="輸入 Student's name">
+                <input type="text" name="gender" placeholder="輸入 Student's gender">
+                <input type="text" name="age" placeholder="輸入 Student's age">
+                <button> Add a student </button> 
+            </form>
+            <table id="stu-table" cellpadding="10" border="1" width="100%">
+                　<tr>
+                　  <td>姓名</td>
+                　  <td>年齡</td>
+                    <td>性別</td>
+                　</tr>
+            </table>
+        </div>
+    </body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyCPyuzIMO0BBLOjXfDS3x8MZkVmaeCXXcE",
+            authDomain: "test-ded31.firebaseapp.com",
+            projectId: "test-ded31",
+            storageBucket: "test-ded31.appspot.com",
+            messagingSenderId: "624196945858",
+            appId: "1:624196945858:web:ccd50d4965392634ec385b",
+            measurementId: "G-2PQBVZY2ZX"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const db = firebase.firestore();
+    </script>
+    <script src="app.js"></script>
+</html>
